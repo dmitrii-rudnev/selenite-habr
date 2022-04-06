@@ -283,8 +283,8 @@ __ALIGN_BEGIN static uint8_t USBD_COMP_CfgDesc[USB_COMP_CONFIG_DESC_SIZ] __ALIGN
     0x24, /* bDescriptorType = AUDIO_INTERFACE_DESCRIPTOR_TYPE = 0x24 */
     0x02, /* bDescriptorSubtype = AUDIO_CONTROL_INPUT_TERMINAL = 0x02 */
     0x04, /* bTerminalID = ID4 */
-    0x00, /* wTerminalType = 0x0200 = Undefined Input Terminal Type */
-    0x02,
+    0x03, /* wTerminalType = 0x0603 = Line Connector Terminal Type */
+    0x06,
     0x00, /* bAssocTerminal = No Associated Terminal*/
     0x02, /* bNrChannels = 0x02 = Stereo */
     0x03, /* wChannelConfig = 0x0003 = Left Front & Right Front Channels */
